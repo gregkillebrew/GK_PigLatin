@@ -13,7 +13,17 @@ const rl = readline.createInterface({
 
 const pigLatin = (word) => {
 
-  // Your code here
+word = word.toLowerCase().trim()
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+let firstLetter = word.slice(0,1);
+
+if (vowels.includes(firstLetter)){
+  return word + "yay"
+}
+else {
+  return word.slice(1) + word.slice(0,1) + "ay"
+}
 
 }
 
