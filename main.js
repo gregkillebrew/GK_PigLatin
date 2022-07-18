@@ -24,7 +24,6 @@ if (vowels.includes(firstLetter)){
 else {
   return word.slice(1) + word.slice(0,1) + "ay"
 }
-
 }
 
 // the first function called in the program to get an input from the user
